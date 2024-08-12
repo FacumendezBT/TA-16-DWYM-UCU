@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/*
+Estilo por defecto para pantallas grandes (1440px ):
+•	El color de fondo de la página debe ser rojo.
+•	El tamaño del texto del párrafo debe ser 24px.
+•	La imagen debe ocupar el 50% del ancho de la pantalla
+*/
+@media (min-width: 1440px){
+    body{
+        background-color: red;
+    }
+    p{
+        font-size: 24px;
+    }
+    img{
+        width: 50%;
+    }
+}
+
+/*
+Pantallas medianas (768px):
+•	El color de fondo debe cambiar a verde.
+•	El tamaño del texto del párrafo debe reducirse a 18px.
+•	La imagen debe ocupar el 70% del ancho de la pantalla.
+*/
+@media (min-width: 768px) and (max-width: 1439px){
+    body{
+        background-color: green;
+    }
+    p{
+        font-size: 18px;
+    }
+    img{
+        width: 70%;
+    }
+}
+/*
+Pantallas pequeñas (425px):
+•	El color de fondo debe cambiar a azul.
+•	El tamaño del texto del párrafo debe reducirse a 14px.
+•	La imagen debe ocupar el 100% del ancho de la pantalla.
+*/
+@media (max-width: 767px){
+    body{
+        background-color: blue;
+    }
+    p{
+        font-size: 14px;
+    }
+    img{
+        width: 100%;
+    }
+}
